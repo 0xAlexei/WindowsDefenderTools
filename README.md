@@ -33,6 +33,22 @@ IMPORTANT: The offsets contained in this project are specific to the 6/25/2018 3
 
 Note that the included patches only contain my `OutputDebugStringA` hooking code. This will let you experiment with the engine and reproduce some of the demos I have shown. Implementing more advanced functionality demonstrated in my presentation is left as an exercise to the reader, eg: building a fuzzer, supporting format string-based output, dumping out arbitrary non-string buffers, hooking `ExitProcess` to understand when emulation is ending, or collecting coverage with a customized Lighthouse Pintool (<https://github.com/gaasedelen/lighthouse>).
 
+### Locating Offsets
+
+Here are some heuristics you can use to locate the functions of interest without Microsoft PDB symbols
+
+#### `RVA_pe_read_string_ex`
+
+References the string "`INVALID_STRING`"
+
+#### `RVA_FP_OutputDebugStringA`
+
+Search for sequence of bytes `0B28014BB`, it's the address of the function pointer right before that sequence in the g_syscalls table.
+
+#### `RVA_Parameters1`
+
+Function called in `OutputDebugStringA`, as found first using the above technique
+
 ---
 ## Binary For Emulator Exploration
 
