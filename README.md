@@ -43,7 +43,7 @@ References the string "`INVALID_STRING`"
 
 #### `RVA_FP_OutputDebugStringA`
 
-Search for sequence of bytes `0B28014BB`, it's the address of the function pointer right before that sequence in the g_syscalls table.
+Search for sequence of bytes `0B28014BB`, it's the address of the function pointer right before that sequence in the `g_syscalls` table.
 
 #### `RVA_Parameters1`
 
