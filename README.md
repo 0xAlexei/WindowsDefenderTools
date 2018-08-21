@@ -1,5 +1,9 @@
 # Windows Defender Emulator Tools
-This repository contains code that I wrote to help with my reverse engineering of Windows Defender Antivirus' binary emulator, complimentary to my presentations on the emulator at Black Hat USA 2018 (<https://www.blackhat.com/us-18/briefings/schedule/index.html#windows-offender-reverse-engineering-windows-defenders-antivirus-emulator-9981>) and DEF CON 26 (<https://www.defcon.org/html/defcon-26/dc-26-speakers.html#Bulazel>). 
+This repository contains code that I wrote to help with my reverse engineering of Windows Defender Antivirus' binary emulator, complimentary to my presentations on the emulator at Black Hat USA 2018 and DEF CON 26. 
+
+Slides: https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf
+
+Videos: https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Alexei%20Bulazel/Alexei-Bulazel-Reverse-Engineering-Windows-Defender-Demo-Videos/
 
 ## `mpclient` Modifications
 
